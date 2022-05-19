@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/climate4R.indices/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 80b1ea85308939432563aadb0f72bf67c2d294fe3db6dca6c1a5a6c40fe06b40
+  sha256: bb600111de5f95351dff6e7ff02041d8e5d1c29788a8ee77afbf3ac9c9e47188
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -45,11 +45,10 @@ test:
 about:
   home: https://github.com/SantanderMetGroup/climate4R
   license: GPL-3.0-or-later
-  summary: A climate4R wrapper of the indices.pcic package implementing ETCCDI Climate Indices
-    <http://etccdi.pacificclimate.org/list_27_indices.shtml>.
+  summary: A climate4R wrapper of the indices.pcic package implementing ETCCDI Climate Indices <http://etccdi.pacificclimate.org/list_27_indices.shtml>.
   doc_url: https://github.com/SantanderMetGroup/climate4R.indices
   dev_url: https://github.com/SantanderMetGroup/climate4R.indices
-  
+
   license_family: GPL3
   license_file: LICENSE.txt
 
@@ -57,7 +56,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - cofinoa
-    
+
 
 # Package: climate4R.indices
 # Title: Climate Index calculation for climate4R data
