@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/climate4R.indices/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bd5a673d614c55e834891dd9a9e30b4d577f7a79cb1ab314b2d11d53ff9d49df
+  sha256: a5be09a26926f47877bf9b9b2b33d2a382d1b562b60bf96434b139bb2fad8bc4
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
